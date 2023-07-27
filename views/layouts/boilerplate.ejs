@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=page%></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css "
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/stars.css" />
+    <link rel="stylesheet" href="/stylesheets/mapsResizing.css" />
+    <link rel="stylesheet" href="/stylesheets/boilerplate.css" />
+    <script
+      src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="d-flex flex-column">
+    <%- include('../partials/navbar.ejs') %>
+    <main class="container mt-4">
+      <%- include('../partials/flash.ejs') %> <%- body -%>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <%- include('../partials/footer.ejs') %>
+    <script src="/validation/validateForms.js"></script>
+    <!-- serving public -->
+  </body>
+</html>

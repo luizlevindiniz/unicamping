@@ -1,0 +1,52 @@
+<% layout(`/layouts/boilerplate.ejs`)-%>
+<h1 class="text-center mb-3">Log In!</h1>
+<hr class="d-none d-md-block my-2 ms-3 mb-3" />
+<div class="container">
+  <form novalidate action="/users/login" method="POST" class="needs-validation">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username: </label>
+      <div class="input mb-3">
+        <input
+          required
+          type="username"
+          id="username"
+          name="username"
+          placeholder="Luwz"
+          class="form-control"
+        />
+        <div class="valid-feedback">Looks cool!</div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password: </label>
+      <input
+        required
+        class="form-control"
+        type="password"
+        id="password"
+        name="password"
+        placeholder="*****"
+      />
+      <div class="valid-feedback">Looks cool!</div>
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-light border" type="submit">Log In</button>
+    </div>
+  </form>
+  <div class="google-btn mb-3">
+    <div class="google-icon-wrapper">
+      <img
+        class="google-icon"
+        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+      />
+    </div>
+    <a class="btn-text" href="/auth/google"><b>Sign in with google</b></a>
+  </div>
+  <div class="mb-3">
+    <a
+      class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+      href="/users/register"
+      >Sign Up</a
+    >
+  </div>
+</div>

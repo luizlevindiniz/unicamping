@@ -1,0 +1,92 @@
+<% layout(`/layouts/boilerplate.ejs`)-%>
+<h1 class="text-center mb-3">New Campground!</h1>
+<hr class="d-none d-md-block my-2 ms-3 mb-3" />
+<div class="container">
+  <form
+    novalidate
+    action="http://localhost:3000/campgrounds"
+    method="POST"
+    class="needs-validation"
+    enctype="multipart/form-data"
+  >
+    <div class="mb-3">
+      <label for="title" class="form-label">Name: </label>
+      <input
+        required
+        class="form-control"
+        type="text"
+        id="title"
+        name="campground[title]"
+        placeholder="Yelp Camp"
+      />
+      <div class="valid-feedback">Looks cool!</div>
+    </div>
+    <div>
+      <label for="price" class="form-label">Price: </label>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+
+      <input
+        required
+        type="number"
+        id="price"
+        name="campground[price]"
+        min="0"
+        step="0.01"
+        placeholder="0.00"
+        aria-label="Amount (to the nearest dollar)"
+        class="form-control"
+      />
+      <div class="valid-feedback">Looks cool!</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="location" class="form-label">Location: </label>
+      <input
+        required
+        class="form-control"
+        type="text"
+        id="location"
+        name="campground[location]"
+        placeholder="Campinas, São Paulo State"
+      />
+      <div class="valid-feedback">Looks cool!</div>
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">Campground Images: </label>
+      <input
+        type="file"
+        name="image"
+        id="image"
+        class="form-control"
+        multiple
+      />
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description: </label>
+      <textarea
+        required
+        name="campground[description]"
+        id="description"
+        cols="30"
+        rows="10"
+        class="form-control"
+        placeholder="A cozy place to stay..."
+      ></textarea>
+      <div class="valid-feedback">Looks cool!</div>
+    </div>
+    <div class="mb-3">
+      <button class="btn btn-light border" type="submit">
+        Create Campground
+      </button>
+    </div>
+  </form>
+  <div class="mb-3">
+    <a
+      class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+      href="http://localhost:3000/campgrounds"
+      >Back</a
+    >
+  </div>
+</div>

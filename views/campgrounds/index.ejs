@@ -1,0 +1,42 @@
+<% layout(`/layouts/boilerplate.ejs`)-%>
+<body>
+  <div class="container">
+    <div id="map" class="indexMap"></div>
+    <h1 class="text-center mb-3">All Campgrounds</h1>
+    <hr class="d-none d-md-block my-2 ms-3 mb-3" />
+
+    <% for(let campground of campgroundsData) {%>
+    <div class="card mb-3 border-4 border-light-subtle">
+      <div class="row">
+        <div class="col-md-6">
+          <img crossorigin="anonymous" src="<%= campground.images[0] ?
+          campground.images[0].url :
+          "https://res.cloudinary.com/dimqowdvh/image/upload/v1689870371/UniCamping/ud0bezvompaiugx4pqw1.jpg"
+          %>" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h5 class="card-title"><%= campground.title %></h5>
+            <p class="card-text"><%= campground.description %></p>
+            <p class="card-text">
+              <small class="text-muted"><%= campground.location %></small>
+            </p>
+            <a
+              href="http://localhost:3000/campgrounds/<%=campground.id%>"
+              class="btn btn-light border"
+              >Details</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </div>
+  <script>
+    const token = "<%-process.env.MAPBOX_TOKEN%>";
+  </script>
+  <script>
+    const campInfo = {features:<%-JSON.stringify(campgroundsData)%>};
+  </script>
+  <script src="/maps/indexPageMap.js"></script>
+</body>

@@ -1,0 +1,17 @@
+<% layout(`/layouts/boilerplate.ejs`)-%>
+<h1 class="text-center mb-3">Error!</h1>
+<hr class="d-none d-md-block my-2 ms-3 mb-3" />
+<div class="row">
+  <div class="column">
+    <div class="container alert alert-danger mb-3" role="alert">
+      <h3><%= statusCode %> - <%= message %></h3>
+    </div>
+    <div class="mb-3">
+      <a
+        class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+        href="http://localhost:3000/campgrounds"
+        >Back to Campgrounds</a
+      >
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-md" data-bs-theme="dark" id="navbar">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand">UniCamping</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a href="http://localhost:3000/campgrounds" class="nav-link"
+            >Campgrounds</a
+          >
+
+          <a href="http://localhost:3000/campgrounds/new" class="nav-link"
+            >New Campground</a
+          >
+        </div>
+        <% if(!currentUser) {%>
+        <div class="navbar-nav ms-auto">
+          <a href="http://localhost:3000/users/login" class="nav-link"
+            >Log In</a
+          >
+
+          <a href="http://localhost:3000/users/register" class="nav-link"
+            >Sign Up</a
+          >
+        </div>
+        <% } else{ %>
+        <div class="navbar-nav ms-auto">
+          <a href="http://localhost:3000/users/logout" class="nav-link"
+            >Log Out</a
+          >
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </nav>
+</header>
