@@ -1,5 +1,6 @@
-# UniCamping
-UniCamping is my first full stack project, bring to life by Colt Steele's Web Dev Bootcamp Course. 
+# ⛺ UniCamping
+
+UniCamping is my first full stack project, bring to life by Colt Steele's Web Dev Bootcamp Course.
 
 ## [Click Here For Live Access](https://unicampin.onrender.com/)
 
@@ -8,23 +9,25 @@ UniCamping is my first full stack project, bring to life by Colt Steele's Web De
 ## My Process
 
 ### Build With
- - Node.js (MongoDB w/ Mongoose, Express, JS and EJS)
- - HTML
- - CSS (w/ Bootstrap)
- - Passport
- - JOI
- - Mapbox API
- - Cloudinary
+
+- Node.js (MongoDB w/ Mongoose, Express, JS and EJS)
+- HTML
+- CSS (w/ Bootstrap)
+- Passport
+- JOI
+- Mapbox API
+- Cloudinary
 
 ### What I've learned?
-The Web Dev Bootcamp Course is very time demanding and covers tons of features ([as you can see here](https://www.udemy.com/course/the-web-developer-bootcamp/)), so I've gone through the basics of 
-Web Development in a broad perspective, enhancing my programming abilities. 
+
+The Web Dev Bootcamp Course is very time demanding and covers tons of features ([as you can see here](https://www.udemy.com/course/the-web-developer-bootcamp/)), so I've gone through the basics of
+Web Development in a broad perspective, enhancing my programming abilities.
 
 ### What I could've done better?
+
 As the number of campgrounds increases, pagination / infinite scrooling is likely a must have feature. Also, sorting features, like
-sort by campground, is also a nice addition. 
+sort by campground, is also a nice addition.
 
 ### Author
 
 - luizlevindiniz
-
