@@ -3,7 +3,7 @@ const router = express.Router();
 const users = require(`../controllers/users`);
 const wrapAsync = require("../utilities/wrapAsync");
 const passport = require("passport");
-const isLoggedIn = require("../auth_middleware/isloggedin");
+const isLoggedIn = require("../auth_middleware/isLoggedIn");
 const storeReturnTo = require(`../auth_middleware/storeReturnTo`);
 
 //render register form and create new user
