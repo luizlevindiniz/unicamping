@@ -15,29 +15,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
-          <a href="http://localhost:3000/campgrounds" class="nav-link"
-            >Campgrounds</a
-          >
+          <a href="/campgrounds" class="nav-link">Campgrounds</a>
 
-          <a href="http://localhost:3000/campgrounds/new" class="nav-link"
-            >New Campground</a
-          >
+          <a href="/campgrounds/new" class="nav-link">New Campground</a>
         </div>
         <% if(!currentUser) {%>
         <div class="navbar-nav ms-auto">
-          <a href="http://localhost:3000/users/login" class="nav-link"
-            >Log In</a
-          >
+          <a href="/users/login" class="nav-link">Log In</a>
 
-          <a href="http://localhost:3000/users/register" class="nav-link"
-            >Sign Up</a
-          >
+          <a href="/users/register" class="nav-link">Sign Up</a>
         </div>
         <% } else{ %>
         <div class="navbar-nav ms-auto">
-          <a href="http://localhost:3000/users/logout" class="nav-link"
-            >Log Out</a
-          >
+          <a href="/users/logout" class="nav-link">Log Out</a>
         </div>
         <% } %>
       </div>

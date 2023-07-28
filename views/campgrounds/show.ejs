@@ -50,11 +50,11 @@
         <div class="card-body">
           <a
             class="btn btn-light border"
-            href="http://localhost:3000/campgrounds/<%= campground.id%>/edit"
+            href="/campgrounds/<%= campground.id%>/edit"
             >Edit Campground</a
           >
           <form
-            action="http://localhost:3000/campgrounds/<%= campground.id%>?_method=DELETE"
+            action="/campgrounds/<%= campground.id%>?_method=DELETE"
             method="POST"
             class="d-inline"
           >
@@ -67,7 +67,7 @@
           <div>
             <a
               class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-              href="http://localhost:3000/campgrounds"
+              href="/campgrounds"
               >Back</a
             >
           </div>
@@ -79,7 +79,7 @@
       <h2 class="text-center mb-3">Reviews:</h2>
       <% if (currentUser){ %>
       <form
-        action="http://localhost:3000/campgrounds/<%=campground.id%>/reviews"
+        action="/campgrounds/<%=campground.id%>/reviews"
         method="POST"
         class="needs-validation"
         novalidate
@@ -155,7 +155,7 @@
           <p class="card-text">Review: <%= review.body %></p>
           <% if (currentUser && review.author.equals(currentUser.id)){ %>
           <form
-            action="http://localhost:3000/campgrounds/<%= campground.id%>/reviews/<%=review.id %>?_method=DELETE"
+            action="/campgrounds/<%= campground.id%>/reviews/<%=review.id %>?_method=DELETE"
             method="POST"
             class="d-inline"
           >
