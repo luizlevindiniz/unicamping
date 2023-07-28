@@ -2,7 +2,12 @@
 
 UniCamping is my first full stack project, bring to life by Colt Steele's Web Dev Bootcamp Course.
 
-## [Click Here For Live Access](https://unicampin.onrender.com/)
+## Live Access
+
+[Click Here For Live Access](https://unicampin.onrender.com/)
+Demo Account:
+Login: user
+Password: user
 
 ![App Screenshot](https://res.cloudinary.com/dimqowdvh/image/upload/v1690561715/wpt8kzmyg7ftjwa3tst6.png)
 
